@@ -19,11 +19,17 @@ if (process.env.NODE_ENV === 'production') {
 
 app.use(routes);
 
-server.applyMiddleware({ app });
+async function startApolloServer() {
+  await server.start();
 
-db.once('open', () => {
-  server.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}.`);
-    console.log(`🚀 GraphQL server ready at http://localhost:${PORT}${server.graphqlPath}`);
+  server.applyMiddleware({ app });
+
+  db.once('open', () => {
+    app.listen(PORT, () => {
+      console.log(`🚀 Server running on port ${PORT}.`);
+      console.log(`🚀 GraphQL server ready at http://localhost:${PORT}${server.graphqlPath}`);
+    });
   });
-});
+}
+
+startApolloServer();
