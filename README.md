@@ -1,2 +1,51 @@
-# Book-Search-Engine
-Google Books API search engine built with a RESTful API refactored to be a GraphQL API built with Apollo Server. The app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API. It's set up to allow users to save book searches to the back end.
+Book Search Engine
+==================
+
+This is a full-stack web application that allows users to search for books using the Google Books API. Users can create an account to save books to their personal reading list. This application is built using MERN stack technologies, which stands for MongoDB, Express.js, React.js, and Node.js.
+
+Installation
+------------
+
+To install the application, follow these steps:
+
+1.  Clone the repository from GitHub.
+2.  Navigate to the root directory of the application.
+3.  Run `npm install` to install the necessary dependencies.
+
+Usage
+-----
+
+To run the application, follow these steps:
+
+1.  Ensure that you have MongoDB installed and running on your local machine.
+2.  Navigate to the root directory of the application.
+3.  Run `npm start` to start the server.
+4.  Open a web browser and navigate to `http://localhost:3001` to view the application.
+
+Functionality
+-------------
+
+The application allows users to:
+
+-   Search for books using the Google Books API
+-   Create an account and log in
+-   Save books to their personal reading list
+-   Remove books from their personal reading list
+
+Technologies
+------------
+
+The application is built using the following technologies:
+
+-   MongoDB
+-   Express.js
+-   React.js
+-   Node.js
+-   GraphQL
+-   Apollo Server
+-   Apollo Client
+
+Contributors
+------------
+
+This application was created by Sebastian Barrera. Please contact me at sebastianbarrera@live.com if you have any questions or feedback.
