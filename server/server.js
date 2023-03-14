@@ -20,8 +20,7 @@ server.start().then(() => {
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
 
-  const _dirname = path.dirname("");
-  const buildPath = path.join(_dirname, "../client/app");
+  const buildPath = path.join(__dirname, "../client/app");
   app.use(express.static(buildPath));
 
   app.get("*", (req, res) => {
