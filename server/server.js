@@ -21,11 +21,11 @@ server.start().then(() => {
   app.use(express.json());
 
   const _dirname = path.dirname("");
-  const buildPath = path.join(_dirname, "../client/build");
+  const buildPath = path.join(_dirname, "../client/app");
   app.use(express.static(buildPath));
 
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+    res.sendFile(path.join(__dirname, "../client/app/index.html"));
   });
 
   db.once("open", () => {
