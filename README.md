@@ -5,6 +5,9 @@ This is a full-stack web application that allows users to search for books using
 
 Check out the website by visiting [here!](https://enigmatic-ravine-26117.herokuapp.com/)
 
+![image](https://user-images.githubusercontent.com/108836644/224878855-126f157c-548c-4af7-96bd-061e3e3e399c.png)
+
+
 Installation
 ------------
 
